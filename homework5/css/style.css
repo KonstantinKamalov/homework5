@@ -1,31 +1,31 @@
 @font-face {
-  font-family: "Manrope-Bold";
+  font-family: "Inter-Bold";
   font-display: swap;
-  src: url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope-ExtraBold";
+  font-family: "Inter-SemiBold";
   font-display: swap;
-  src: url("../fonts/Manrope-ExtraBold.woff") format("woff"), url("../fonts/Manrope-ExtraBold.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope-Medium";
+  font-family: "Inter-Medium";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope-Medium.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope-Regular";
+  font-family: "Inter-Regular";
   font-display: swap;
-  src: url("../fonts/Manrope-Regular.woff") format("woff"), url("../fonts/Manrope-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -54,6 +54,7 @@ p {
 }
 
 .container {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   background-color: cadetblue;
@@ -62,11 +63,79 @@ p {
 .left-side {
   background: #1565d8 url("../img/background.jpg") no-repeat;
   max-width: 666px;
-  padding: 64px 111px 64px 82px;
+  padding: 64px 111px 350px 82px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .left-side__text {
+  position: relative;
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #fff;
   margin-top: 276px;
+  margin-bottom: 22px;
+}
+
+.left-side__text::before {
+  position: absolute;
+  display: inline-block;
+  top: -40px;
+  left: -1px;
+  width: 28px;
+  height: 20px;
+  background: url("../img/quotes.svg") no-repeat;
+  content: "";
+}
+
+.left-side__text::after {
+  position: absolute;
+  display: inline-block;
+  bottom: -99px;
+  right: 37px;
+  width: 33px;
+  height: 33px;
+  background: url("../img/angle.svg") no-repeat;
+  content: "";
+}
+
+.left-side__sign {
+  position: relative;
+  font-family: "Inter-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #fff;
+}
+
+.left-side__sign::after {
+  position: absolute;
+  top: 2px;
+  right: -24px;
+  width: 15.8px;
+  height: 15.8px;
+  background: url("../img/check.svg") no-repeat;
+  content: "";
+}
+
+.left-side::after {
+  position: absolute;
+  top: 212px;
+  left: 415px;
+  width: 60px;
+  height: 56px;
+  background: url("../img/matrix.svg") no-repeat;
+  content: "";
+}
+
+.left-side::before {
+  position: absolute;
+  bottom: 7.82px;
+  left: 0px;
+  width: 120px;
+  height: 122px;
+  background: url("../img/circles.svg") no-repeat;
+  content: "";
 }
