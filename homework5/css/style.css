@@ -30,29 +30,43 @@
   font-style: normal;
 }
 
-body {
-  background-color: burlywood;
-  color: #010101;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-header {
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: cadetblue;
 }
 
-span {
-  font-size: 20px;
+.left-side {
+  background: #1565d8 url("../img/background.jpg") no-repeat;
+  max-width: 666px;
+  padding: 64px 111px 64px 82px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-div {
-  font-size: 30px;
-}
-
-@media (max-width: 765px) {
-  span {
-    font-size: 10px;
-  }
-
-  div {
-    font-size: 20px;
-  }
+.left-side__text {
+  margin-top: 276px;
 }
