@@ -58,6 +58,9 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   background-color: cadetblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .left-side {
@@ -138,4 +141,65 @@ p {
   height: 122px;
   background: url("../img/circles.svg") no-repeat;
   content: "";
+}
+
+.right-side {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+.right-side__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right-side__back {
+  position: relative;
+}
+
+.right-side__back::before {
+  position: absolute;
+  top: 0px;
+  left: -24px;
+  width: 9.73px;
+  height: 16.5px;
+  background: url("../img/arrow_back.svg") no-repeat;
+  content: "";
+}
+
+.right-side__desc {
+  text-align: right;
+}
+
+.right-side .registration-form__subtitle {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.right-side .registration-form__subtitle::after {
+  position: absolute;
+  width: 427px;
+  left: 0;
+  bottom: -16px;
+  border: 1px solid #f5f5f5;
+  content: "";
+}
+
+.right-side .registration-form__submit {
+  display: block;
+  padding: 23px 0;
+  width: 426px;
+  text-align: center;
+  background-color: #1565d8;
+  color: #fff;
+}
+
+.right-side .registration-form .with-google {
+  background-color: #fff;
+  color: #000;
 }
